@@ -977,7 +977,7 @@
 /* Banner */
 
 	#banner {
-		background-color: #666666;
+		background-color: #101214;
 		background-image: url("../images/banner.jpg");
 		background-size: cover;
 		background-position: center center;
@@ -1034,6 +1034,7 @@
 
 		#banner h2 {
 			font-size: 3.5em;
+			text-shadow: 0 0 2px black;
 			line-height: 1em;
 			margin: 0 0 0.5em 0;
 			padding: 0;
