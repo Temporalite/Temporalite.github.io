@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "CircularStd-Book";
+  src:  url("fonts/CircularStd-Book.woff") format("woff"),
+        url("fonts/CircularStd-Book.ttf") format("ttf"),
+        url("fonts/CircularStd-Book.oet") format("oet"),
+        url("fonts/CircularStd-Book.svg") format("svg");
+}
+
+@mobile: ~"only screen and (max-width: 420px)";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	font: normal 12px "CircularStd-Book", Helvetica, Arial, sans-serif;
+	color: #fff;
+	background-color: #59777e;
+}
+
+.background-image {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: block;
+  
+  background-image: url(img/gas-mask.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+	@media @mobile {
+    background-image: url(img/gas-mask-mobile.jpg);
+
+    -webkit-filter: brightness(50%);
+    filter: brightness(50%);
+  }
+}
+
+section {
+  position: fixed;
+  height: 200px;
+  top: 45%;
+  left: 30px;
+  z-index: 2;
+  
+  @media @mobile {
+    top: 30%;
+    left: 0;
+    right: 0;
+  }
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 82px;
+  letter-spacing: 4px;
+  
+  @media @mobile {
+    font-size: 40px;
+    text-align: center;
+  }
+}
+
+p {
+  font-size: 25px;
+  letter-spacing: 2px;
+  
+  @media @mobile {
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+  }
+}
+
+a {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 20px;
+  margin-right: 20px;
+  line-height: 50px;
+  
+  @media @mobile {
+    width: 50%;
+    display: block;
+    text-align: center;
+    float: left;
+    margin-top: 30px;
+    margin-right: 0;
+  }
+}
